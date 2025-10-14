@@ -1,11 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Security Toolkit by MD Mahe Hasan</title>
+  <meta name="description" content="A collection of security and bug bounty helper scripts: subdomain discovery, takeover detection, link finder, PII scanner, and BXSS helpers." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-    <article>HI THIS THIS DOMAIN TAKE OVER BY MD MAHE HASAN</article>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top">Security Toolkit</a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#usage">Usage</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1>Security Toolkit</h1>
+          <p class="lead">
+            Bash utilities for reconnaissance and testing: subdomains, takeover checks, link discovery, PII scanning, and blind XSS helpers.
+          </p>
+          <div class="cta-group">
+            <a class="btn btn--primary" href="#tools">Explore Tools</a>
+            <a class="btn" href="#usage">How to Use</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="card">
+            <h3>Quick Start</h3>
+            <ol>
+              <li>Give execute permission: <code>chmod +x *.sh</code></li>
+              <li>Run a script, e.g.: <code>./subdomainfind.sh example.com</code></li>
+              <li>Review results and iterate.</li>
+            </ol>
+            <p class="muted">Tip: use <code>--help</code> if a script supports it.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools" class="section">
+      <div class="container">
+        <h2>Included Tools</h2>
+        <div class="grid">
+          <article class="tool">
+            <h3>Subdomain Finder</h3>
+            <p>Enumerate subdomains for a target domain to expand your attack surface.</p>
+            <div class="links">
+              <a class="btn btn--ghost" href="subdomainfind.sh" download>Download</a>
+              <a class="link" href="#usage-subdomain">Usage</a>
+            </div>
+          </article>
+          <article class="tool">
+            <h3>Takeover Checker</h3>
+            <p>Identify potential subdomain takeover opportunities.</p>
+            <div class="links">
+              <a class="btn btn--ghost" href="takeover.sh" download>Download</a>
+              <a class="link" href="#usage-takeover">Usage</a>
+            </div>
+          </article>
+          <article class="tool">
+            <h3>Link Finder</h3>
+            <p>Extract endpoints and URLs from JS/HTML for deeper crawling and testing.</p>
+            <div class="links">
+              <a class="btn btn--ghost" href="linkFinder.sh" download>Download (v1)</a>
+              <a class="btn btn--ghost" href="linkfinder.sh" download>Download (v2)</a>
+              <a class="link" href="#usage-linkfinder">Usage</a>
+            </div>
+          </article>
+          <article class="tool">
+            <h3>PII Scanner</h3>
+            <p>Search output for potential personally identifiable information patterns.</p>
+            <div class="links">
+              <a class="btn btn--ghost" href="pii.sh" download>Download</a>
+              <a class="link" href="#usage-pii">Usage</a>
+            </div>
+          </article>
+          <article class="tool">
+            <h3>Blind XSS Helpers</h3>
+            <p>Handy payload lists and helper script for blind XSS hunting.</p>
+            <div class="links">
+              <a class="btn btn--ghost" href="bxss.sh" download>Script</a>
+              <a class="btn btn--ghost" href="bxssMostUsed.txt" download>Most used payloads</a>
+              <a class="btn btn--ghost" href="common.txt" download>Common payloads</a>
+              <a class="link" href="#usage-bxss">Usage</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="usage" class="section section--alt">
+      <div class="container">
+        <h2>Usage Examples</h2>
+
+        <div id="usage-subdomain" class="usage-block">
+          <h3>Subdomain Finder</h3>
+          <pre><code># Make executable
+chmod +x subdomainfind.sh
+
+# Basic usage
+./subdomainfind.sh example.com
+
+# Save results
+./subdomainfind.sh example.com &gt; subdomains.txt
+</code></pre>
+        </div>
+
+        <div id="usage-takeover" class="usage-block">
+          <h3>Takeover Checker</h3>
+          <pre><code># Make executable
+chmod +x takeover.sh
+
+# From a list of subdomains
+cat subdomains.txt | ./takeover.sh
+</code></pre>
+        </div>
+
+        <div id="usage-linkfinder" class="usage-block">
+          <h3>Link Finder</h3>
+          <pre><code># Make executable
+chmod +x linkFinder.sh linkfinder.sh
+
+# Crawl a URL or JS file
+./linkFinder.sh https://example.com
+./linkfinder.sh app.js</code></pre>
+        </div>
+
+        <div id="usage-pii" class="usage-block">
+          <h3>PII Scanner</h3>
+          <pre><code># Make executable
+chmod +x pii.sh
+
+# Scan a file or stream
+./pii.sh results.txt
+cat responses.txt | ./pii.sh</code></pre>
+        </div>
+
+        <div id="usage-bxss" class="usage-block">
+          <h3>Blind XSS Helpers</h3>
+          <pre><code># Make executable
+chmod +x bxss.sh
+
+# Print or inject common payloads
+./bxss.sh --list
+./bxss.sh --inject target.txt
+
+# Reference lists
+bxssMostUsed.txt
+common.txt</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section">
+      <div class="container">
+        <h2>Resources</h2>
+        <ul class="resource-list">
+          <li><a href="README.md" download>Project README</a></li>
+          <li><a href="bxssMostUsed.txt" download>BXSS Most Used</a></li>
+          <li><a href="common.txt" download>Common Payloads</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="about" class="section section--alt">
+      <div class="container about">
+        <div>
+          <h2>About</h2>
+          <p>This project aggregates small, focused bash scripts that speed up common recon and testing workflows.</p>
+          <p class="muted">Maintained by <strong>MD Mahe Hasan</strong>. Use responsibly and only against targets you have explicit permission to test.</p>
+        </div>
+        <div class="card card--contact">
+          <h3>Contact</h3>
+          <p>Want to collaborate or report an issue?</p>
+          <ul class="contact">
+            <li>Email: <a href="mailto:me@example.com">me@example.com</a></li>
+            <li>GitHub: <a href="#" rel="noopener">your-handle</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> Security Toolkit • MIT License</p>
+      <nav class="footer-nav">
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
