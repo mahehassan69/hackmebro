@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — UX Portfolio</title>
+  <meta name="description" content="Get in touch about projects, collaborations, or opportunities.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">UX Portfolio<span class="brand__dot">.</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Portfolio</a></li>
+          <li><a aria-current="page" href="contact.html">Contact</a></li>
+          <li><a class="pill" href="assets/resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1>Contact</h1>
+        <p class="lead">Have a project in mind? Let’s talk.</p>
+
+        <form class="form reveal" action="https://formspree.io/f/your-id" method="POST">
+          <input class="input" type="text" name="name" placeholder="Your name" required>
+          <input class="input" type="email" name="email" placeholder="Your email" required>
+          <textarea name="message" placeholder="Tell me about your project..." required></textarea>
+          <button class="btn btn--accent" type="submit">Send message</button>
+        </form>
+
+        <div class="card" style="margin-top:18px">
+          <strong>Prefer email?</strong>
+          <p><a href="mailto:you@example.com">you@example.com</a></p>
+          <div class="social">
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">Availability</h2>
+        <p class="reveal">Currently accepting freelance work for Oct–Dec. Based in [Your City], working remotely with teams globally.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

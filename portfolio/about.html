@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About — UX Portfolio</title>
+  <meta name="description" content="About me — UX/Product Designer focused on simple, useful digital products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">UX Portfolio<span class="brand__dot">.</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a aria-current="page" href="about.html">About</a></li>
+          <li><a href="work.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="pill" href="assets/resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container split">
+        <div class="reveal">
+          <h1>About me</h1>
+          <p class="lead">I’m a UX/Product Designer who loves clarity and thoughtful details.</p>
+          <p>I bring 5+ years of experience across fintech, SaaS, and healthcare. My strengths are systems thinking, user research synthesis, and prototyping to learn fast.</p>
+          <div class="cta">
+            <a class="btn btn--accent" href="work.html">See my work</a>
+            <a class="btn btn--ghost" href="assets/resume.pdf" download>Resume</a>
+          </div>
+        </div>
+        <div class="card reveal">
+          <h3>Expertise</h3>
+          <ul>
+            <li>User research & discovery workshops</li>
+            <li>Journey mapping, IA, and flows</li>
+            <li>Wireframing & rapid prototyping</li>
+            <li>Usability testing & iteration</li>
+            <li>Design systems & documentation</li>
+          </ul>
+          <h3>Tools</h3>
+          <p>Figma, FigJam, Framer, Notion, Jira, Analytics</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">Approach</h2>
+        <div class="grid grid--3">
+          <div class="card reveal">
+            <strong>Understand</strong>
+            <p>Start with people and problems. Align on goals and constraints.</p>
+          </div>
+          <div class="card reveal">
+            <strong>Explore</strong>
+            <p>Sketch, prototype, and test to learn what works early.</p>
+          </div>
+          <div class="card reveal">
+            <strong>Refine</strong>
+            <p>Iterate with data and feedback. Document and scale with systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

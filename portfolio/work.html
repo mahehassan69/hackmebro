@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — UX Case Studies</title>
+  <meta name="description" content="UX portfolio gallery and selected case studies with outcomes and process highlights.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">UX Portfolio<span class="brand__dot">.</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a aria-current="page" href="work.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="pill" href="assets/resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1>Portfolio</h1>
+        <p class="lead">A selection of projects with measurable outcomes and a peek into my process.</p>
+        <div class="gallery" id="projects">
+          <a id="project-1" class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-1.jpg" alt="Mobile Banking project cover">
+            <div class="project__meta">
+              <strong>Mobile Banking</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+          <a id="project-2" class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-2.jpg" alt="SaaS Onboarding project cover">
+            <div class="project__meta">
+              <strong>SaaS Onboarding</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+          <a id="project-3" class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-3.jpg" alt="Healthcare Portal project cover">
+            <div class="project__meta">
+              <strong>Healthcare Portal</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+          <a class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-4.jpg" alt="Additional project cover">
+            <div class="project__meta">
+              <strong>Analytics Dashboard</strong>
+              <span>UI/UX</span>
+            </div>
+          </a>
+          <a class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-5.jpg" alt="Additional project cover">
+            <div class="project__meta">
+              <strong>E‑commerce UX</strong>
+              <span>Research</span>
+            </div>
+          </a>
+          <a class="project reveal" href="#">
+            <img class="project__image" src="assets/images/project-6.jpg" alt="Additional project cover">
+            <div class="project__meta">
+              <strong>Design System</strong>
+              <span>Systems</span>
+            </div>
+          </a>
+        </div>
+        <p class="muted" style="margin-top:10px">Replace images under assets/images/ with your project covers.</p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">How I work</h2>
+        <div class="grid grid--3">
+          <div class="card reveal">
+            <strong>1. Define</strong>
+            <p>Clarify the problem, success metrics, and constraints with stakeholders.</p>
+          </div>
+          <div class="card reveal">
+            <strong>2. Explore</strong>
+            <p>Translate insights into flows and prototypes. Test early with users.</p>
+          </div>
+          <div class="card reveal">
+            <strong>3. Deliver</strong>
+            <p>Iterate with feedback, document patterns, and collaborate closely with devs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/main.js"></script>
+</body>
+</html>

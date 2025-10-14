@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>UX Portfolio — Home</title>
+  <meta name="description" content="Minimal, clean UX design portfolio showcasing selected projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">UX Portfolio<span class="brand__dot">.</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="pill" href="assets/resume.pdf" download>Download Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="reveal">
+          <span class="pill">Product Design • UX • UI</span>
+          <h1>Designing clear, human-centered experiences.</h1>
+          <p class="lead">I turn complex problems into simple, intuitive products—balancing user needs with business goals.</p>
+          <div class="cta">
+            <a class="btn btn--accent" href="work.html">View Work</a>
+            <a class="btn btn--ghost" href="about.html">About Me</a>
+          </div>
+        </div>
+        <div class="reveal">
+          <div class="card">
+            <h3>Selected highlights</h3>
+            <ul>
+              <li>Improved onboarding completion by 32% for a SaaS product</li>
+              <li>Led end-to-end redesign for a mobile fintech app</li>
+              <li>Delivered a design system used across 4 teams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">Featured Projects</h2>
+        <div class="gallery">
+          <a class="project reveal" href="work.html#project-1">
+            <img class="project__image" src="assets/images/project-1.jpg" alt="Project 1 cover">
+            <div class="project__meta">
+              <strong>Mobile Banking</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+          <a class="project reveal" href="work.html#project-2">
+            <img class="project__image" src="assets/images/project-2.jpg" alt="Project 2 cover">
+            <div class="project__meta">
+              <strong>SaaS Onboarding</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+          <a class="project reveal" href="work.html#project-3">
+            <img class="project__image" src="assets/images/project-3.jpg" alt="Project 3 cover">
+            <div class="project__meta">
+              <strong>Healthcare Portal</strong>
+              <span>Case Study</span>
+            </div>
+          </a>
+        </div>
+        <div style="margin-top:18px">
+          <a class="btn btn--ghost" href="work.html">See all projects</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Your Name</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
