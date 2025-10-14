@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — [Your Name]</title>
+  <meta name="description" content="About me — UX Designer with focus on clarity, accessibility, and measurable outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">[Your Name]</a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn--ghost btn--small" href="assets/resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container about">
+        <div class="content reveal">
+          <h1>About Me</h1>
+          <p class="lead">I’m a UX Designer passionate about designing inclusive, intuitive experiences that deliver business impact.</p>
+          <p>I combine research, prototyping, and systems thinking to create scalable solutions. My work spans web and mobile, from early discovery through implementation. I care deeply about accessibility (WCAG) and thoughtful motion.</p>
+          <div class="bulleted">
+            <h3>Skills</h3>
+            <ul>
+              <li>User research, usability testing</li>
+              <li>Wireframing, prototyping (Figma)</li>
+              <li>Design systems & documentation</li>
+              <li>Interaction design & micro-animations</li>
+              <li>Accessibility-first UX (WCAG)</li>
+            </ul>
+          </div>
+          <div class="cta-group">
+            <a class="btn btn--primary" href="portfolio.html">View Portfolio</a>
+            <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+          </div>
+        </div>
+        <aside class="card reveal">
+          <h3>Links</h3>
+          <ul class="contact">
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">your-linkedin</a></li>
+            <li>GitHub: <a href="https://github.com/your-github" target="_blank" rel="noopener">your-github</a></li>
+            <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> [Your Name] — UX Design</p>
+      <nav class="footer-nav">
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

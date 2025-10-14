@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — [Your Name]</title>
+  <meta name="description" content="Contact form and social links for UX design portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">[Your Name]</a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a class="btn btn--ghost btn--small" href="assets/resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal">Contact</h1>
+        <p class="muted reveal">Interested in collaborating? Send a message and I’ll get back to you.</p>
+
+        <div class="grid grid--contact">
+          <form class="card contact-form reveal" action="https://formspree.io/f/your-form-id" method="POST">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="_replyto" type="email" required />
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn--primary" type="submit">Send</button>
+              <p class="muted note">Powered by Formspree — replace action URL with your endpoint.</p>
+            </div>
+          </form>
+
+          <aside class="card reveal">
+            <h3>Elsewhere</h3>
+            <ul class="contact">
+              <li>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">your-linkedin</a></li>
+              <li>GitHub: <a href="https://github.com/your-github" target="_blank" rel="noopener">your-github</a></li>
+              <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            </ul>
+            <div class="cta-group">
+              <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> [Your Name] — UX Design</p>
+      <nav class="footer-nav">
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
