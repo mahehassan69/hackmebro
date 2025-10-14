@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — [Your Name]</title>
+  <meta name="description" content="UX portfolio case studies and project gallery with hover and scroll animations." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">[Your Name]</a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn--ghost btn--small" href="assets/resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal">Portfolio</h1>
+        <p class="muted reveal">A selection of UX case studies and outcomes. Images are placeholders—replace with your project visuals in assets/img/.</p>
+
+        <div class="grid grid--cards">
+          <article id="project-1" class="project-card reveal">
+            <a class="project-card__link" href="#">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>SaaS Dashboard</h3>
+                <p class="muted">Redesigned navigation and key workflows to improve efficiency. Outcome: +22% task completion rate.</p>
+              </div>
+            </a>
+          </article>
+
+          <article id="project-2" class="project-card reveal">
+            <a class="project-card__link" href="#">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>Mobile Onboarding</h3>
+                <p class="muted">Simplified onboarding with progressive disclosure. Outcome: -40% time to first value.</p>
+              </div>
+            </a>
+          </article>
+
+          <article id="project-3" class="project-card reveal">
+            <a class="project-card__link" href="#">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>E-commerce Checkout</h3>
+                <p class="muted">Reduced friction with streamlined checkout UX. Outcome: +18% conversion rate.</p>
+              </div>
+            </a>
+          </article>
+
+          <article id="project-4" class="project-card reveal">
+            <a class="project-card__link" href="#">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>Design System</h3>
+                <p class="muted">Built reusable components and guidelines. Outcome: faster delivery and consistency.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> [Your Name] — UX Design</p>
+      <nav class="footer-nav">
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

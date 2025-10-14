@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Your Name] — UX Designer</title>
+  <meta name="description" content="Clean and modern UX design portfolio showcasing case studies, process, and outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">[Your Name]</a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+        <ul class="nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a class="btn btn--ghost btn--small" href="assets/resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <h1 class="reveal">UX Designer crafting thoughtful, human-centered experiences</h1>
+          <p class="lead reveal">I design clean, modern interfaces with a focus on accessibility, clarity, and measurable outcomes.</p>
+          <div class="cta-group reveal">
+            <a class="btn btn--primary" href="portfolio.html">View Work</a>
+            <a class="btn" href="assets/resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="social reveal">
+            <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+            <span>•</span>
+            <a href="https://github.com/your-github" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+        <div class="hero__card">
+          <div class="card reveal">
+            <h3>Selected Highlights</h3>
+            <ul class="bulleted">
+              <li>Increased conversion +18% with simplified checkout UX</li>
+              <li>Reduced onboarding time by 40% via progressive disclosure</li>
+              <li>Built scalable design system components in Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">Featured Projects</h2>
+        <div class="grid grid--cards">
+          <article class="project-card reveal">
+            <a class="project-card__link" href="portfolio.html#project-1">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>Project One — SaaS Dashboard</h3>
+                <p class="muted">Information architecture, interaction design, and usability testing.</p>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-card__link" href="portfolio.html#project-2">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>Project Two — Mobile Onboarding</h3>
+                <p class="muted">Journey mapping, flows, and accessibility-first UI.</p>
+              </div>
+            </a>
+          </article>
+          <article class="project-card reveal">
+            <a class="project-card__link" href="portfolio.html#project-3">
+              <div class="project-card__thumb placeholder-thumb">Project Image</div>
+              <div class="project-card__body">
+                <h3>Project Three — E-commerce Checkout</h3>
+                <p class="muted">Research, prototyping, A/B testing, and outcomes.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+        <div class="center">
+          <a class="btn" href="portfolio.html">See all projects</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Approach</h2>
+        <div class="process reveal">
+          <article class="step">
+            <h3>Discover</h3>
+            <p class="muted">Define goals, users, constraints. Align on success metrics.</p>
+          </article>
+          <article class="step">
+            <h3>Design</h3>
+            <p class="muted">Wireframes, prototypes, and design system components.</p>
+          </article>
+          <article class="step">
+            <h3>Validate</h3>
+            <p class="muted">Usability testing, iterations, and accessible implementation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__grid">
+      <p>© <span id="year"></span> [Your Name] — UX Design</p>
+      <nav class="footer-nav">
+        <a href="#top">Back to top</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
